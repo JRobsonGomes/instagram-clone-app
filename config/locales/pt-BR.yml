@@ -2,15 +2,22 @@ pt-BR:
   activerecord:
     models:
       user: Usuário
+      comment: Comentário
       
     attributes:
       default: &default
-        created_at: 'Criado em'
-        updated_at: 'Atualizado em'
+        created_at: Criado em
+        updated_at: Atualizado em
+
       post:
         <<: *default
-        description: 'Descrição'
-        photo: 'Foto'
+        description: Descrição
+        photo: Foto
+
+      comment:
+        <<: *default
+        body: Comentário
+
       user:
         <<: *default
         name: Nome
