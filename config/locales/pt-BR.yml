@@ -21,6 +21,7 @@ pt-BR:
       user:
         <<: *default
         name: Nome
+        username: Nome de Usuário
         email: Email
         password: Senha
         password_confirmation: Senha (Confirmação)
@@ -30,3 +31,13 @@ pt-BR:
       #Active Storage Validations
       content_type_invalid: é um tipo de arquivo inválido
       file_size_out_of_range: tem %{file_size} mas o limite é 5 MB
+
+  links:
+    log_in: Entrar
+    sign_up: Registre-se
+    forgot_your_password: Esqueceu sua senha?
+    did_rec_confirm_instr: Não recebeu instruções de confirmação?
+    did_rec_unl_inst: Não recebeu instruções de desbloqueio?
+    sign_in_with: Entrar com
+    send_reset_passw_inst: Enviar-me para redefinir as instruções de senha
+    change_my_password: Mudar minha senha

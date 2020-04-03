@@ -1,16 +1,16 @@
-<h2>Authentication</h2>
+<h2>Autenticação</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: User.human_attribute_name(:email) %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "current-password", placeholder: "PassWord" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: User.human_attribute_name(:password) %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit t("links.log_in") %>
   </div>
 <% end %>
 
